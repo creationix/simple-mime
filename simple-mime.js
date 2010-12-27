@@ -3,7 +3,7 @@ var types;
 module.exports = function setup(defaultMime) {
   return function getMime(path) {
     path = path.toLowerCase().trim();
-    var index = String(path).lastIndexOf(".");
+    var index = path.lastIndexOf(".");
     if (index >= 0) {
       path = path.substr(index + 1);
     }
