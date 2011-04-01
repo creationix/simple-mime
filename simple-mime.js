@@ -80,6 +80,7 @@ types = {
   jpg: "image/jpeg",
   js: "application/javascript",
   json: "application/json",
+  less: "text/css",
   log: "text/plain",
   m3u: "audio/x-mpegurl",
   m4v: "video/mp4",
