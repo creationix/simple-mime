@@ -3,7 +3,11 @@ var types;
 module.exports = function setup(defaultMime) {
   return function getMime(path) {
     path = path.toLowerCase().trim();
-    var index = path.lastIndexOf(".");
+    var index = path.lastIndexOf("/");
+    if (index >= 0) {
+      path = path.substr(index + 1);
+    }
+    index = path.lastIndexOf(".");
     if (index >= 0) {
       path = path.substr(index + 1);
     }
@@ -29,9 +33,10 @@ types = {
   bin: "application/octet-stream",
   bmp: "image/bmp",
   bz2: "application/x-bzip2",
-  c: "text/x-c",
+  c: "text/x-csrc",
   cab: "application/vnd.ms-cab-compressed",
-  cc: "text/x-c",
+  can: "application/candor",
+  cc: "text/x-c++src",
   chm: "application/vnd.ms-htmlhelp",
   "class": "application/octet-stream",
   com: "application/x-msdownload",
@@ -65,8 +70,8 @@ types = {
   gemspec: "text/x-script.ruby",
   gif: "image/gif",
   gz: "application/x-gzip",
-  h: "text/x-c",
-  hh: "text/x-c",
+  h: "text/x-chdr",
+  hh: "text/x-c++hdr",
   htm: "text/html",
   html: "text/html",
   ico: "image/vnd.microsoft.icon",
@@ -82,15 +87,16 @@ types = {
   json: "application/json",
   less: "text/css",
   log: "text/plain",
+  makefile: "text/x-makefile",
   m3u: "audio/x-mpegurl",
   m4v: "video/mp4",
   man: "text/troff",
   manifest: "text/cache-manifest",
-  markdown: "text/markdown",
+  markdown: "text/x-markdown",
   mathml: "application/mathml+xml",
   mbox: "application/mbox",
   mdoc: "text/troff",
-  md: "text/markdown",
+  md: "text/x-markdown",
   me: "text/troff",
   mid: "audio/midi",
   midi: "audio/midi",
