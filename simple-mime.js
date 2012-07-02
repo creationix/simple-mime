@@ -175,6 +175,7 @@ types = {
   vrml: "model/vrml",
   war   : "application/java-archive",
   wav   : "audio/x-wav",
+  webapp: "application/x-web-app-manifest+json",
   webm: "video/webm",
   wma: "audio/x-ms-wma",
   wmv: "video/x-ms-wmv",
