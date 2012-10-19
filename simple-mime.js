@@ -87,6 +87,8 @@ types = {
   json: "application/json",
   less: "text/css",
   log: "text/plain",
+  lua: "text/x-lua",
+  luac: "application/x-lua-bytecode",
   makefile: "text/x-makefile",
   m3u: "audio/x-mpegurl",
   m4v: "video/mp4",
