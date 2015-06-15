@@ -15,9 +15,11 @@ If you choose to not use npm, or can't use it in your environment, then simply c
 
 Simply load this library, configure your fallback mime type, and query it for the mime type of various filenames.
 
-    var getMimeType = require('mime')('application/octect-stream');
-    var file = "/bar/foo/baz.mp3";
-    var type = getMimeType(file);
+```js
+var getMimeType = require('simple-mime')('application/octet-stream');
+var file = '/bar/foo/baz.mp3';
+var type = getMimeType(file); // => 'audio/mpeg'
+```
 
 ## Goal
 
