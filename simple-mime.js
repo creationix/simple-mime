@@ -57,6 +57,7 @@ defineTypes({
     "vnd.oasis.opendocument.presentation": "odp",
     "vnd.oasis.opendocument.spreadsheet": "ods",
     "vnd.oasis.opendocument.text": "odt",
+    "wasm": "wasm",
     "wsdl+xml": "wsdl",
     "x-bittorrent": "torrent",
     "x-bytecode.lua": "luac",
